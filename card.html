@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Example</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    /* Custom CSS */
+    .red-text {
+      color: red;
+    }
+    .bg-blue {
+      background-color: blue;
+      color: white;
+    }
+    .horizontal-h2 {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Bootstrap buttons -->
+    <div class="mt-4">
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-info">Info</button>
+    </div>
+
+    <!-- Red paragraph text -->
+    <p class="red-text mt-4">This is a red paragraph text.</p>
+
+    <!-- Background color for h1 -->
+    <h1 class="bg-blue p-2 mt-4">H1 Text with Background Color</h1>
+
+    <!-- Bootstrap navbar with dropdown -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mt-4">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Bootstrap input group with small sizing -->
+    <div class="input-group input-group-sm mt-4">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+      </div>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+    </div>
+
+    <!-- Three h2 tags placed horizontally in reverse -->
+    <div class="horizontal-h2 mt-4">
+      <h2>First H2</h2>
+      <h2>Second H2</h2>
+      <h2>Third H2</h2>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
